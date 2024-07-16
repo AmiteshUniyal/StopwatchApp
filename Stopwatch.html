@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="stopwatchcss.css">
+  </head>
+  <body>
+    <h1 style="padding-top: 2em">
+      <center>-: <u>STOPWATCH</u> :-</center>
+    </h1>
+    <div class="timer">
+      <div>
+        <div id="time"><center>00:00:00:00</center></div>
+        <br /><br />
+        <div id="btn">
+          <button onclick="start()" style="border: transparent">
+            <img
+              id="play"
+              src="play_circle_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+              style="border: transparent; height: 80px"
+            />
+            <img
+              id="pause"
+              src="pause_circle_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+              style="
+                display: none;
+                height: 80px;
+              "
+            />
+          </button>
+          <button onclick="restart()" style="border: transparent">
+            <img
+              src="restart_alt_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+              height="80px"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="stopwatch.js"></script>
+</html>
