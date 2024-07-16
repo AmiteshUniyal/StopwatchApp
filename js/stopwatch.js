@@ -1,13 +1,10 @@
-
 const pause = document.getElementById("pause");
 const play = document.getElementById("play");
 let toggle = true;
 let Time = null;
-let seconds = 0,
-  minutes = 0,
-  hours = 0,
-  milisec = 0;
+let seconds = 0, minutes = 0, hours = 0, milisec = 0;
 let displaytime = document.getElementById("time");
+
 function start_timer() {
   milisec++;
   if (milisec === 100) {
@@ -33,14 +30,12 @@ function start_timer() {
 }
 function start() {
   if (toggle) {
-    if (Time !== null) {
-      clearInterval(Time);
-    }
     Time = setInterval(start_timer, 10);
     toggle = false;
     play.style.display = "none";
     pause.style.display = "block";
-  } else {
+  } 
+  else {
     clearInterval(Time);
     toggle = true;
     play.style.display = "block";
